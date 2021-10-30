@@ -1,0 +1,58 @@
+label,legend{
+    font-family: 'Mukta', sans-serif;
+}
+
+.main{
+    display: flex;  
+    justify-content: center;
+    background-color:white;
+}
+
+.main > div{
+    background-color: black;
+    margin: 10px;
+    padding: 15px;
+    background-color:white;
+}
+
+input[type=text],input[type=email]{
+    width: 313px;
+    color: black;
+    background-color: whitesmoke;
+}
+
+input:active{
+    background-color: lightgrey;
+}
+
+fieldset{
+    background-color: lightblue;
+}
+
+form{
+    background-image:  linear-gradient(to bottom right, lightblue, blue);
+    box-shadow: 1px 3px 6px;
+    margin: 20px;
+    padding: 30px;
+}
+
+.button{
+    display: inline-block;
+    border-radius: 15px;
+    margin: 4px 2px;
+    text-align: center;
+}
+.button:hover{
+    box-shadow: 1px 1px 1px 1px;
+    opacity: .6;
+}
+
+legend{
+
+    font-size: 30px;
+    justify-content: center;
+}
+
+
+
+

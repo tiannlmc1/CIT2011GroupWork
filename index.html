@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Poly Disco</title>
+	<link rel="stylesheet" href="style/stylesheet.css">
+	<!-- <link rel="icon" href="⨴"> -->
+	<script type="text/javascript" src="script/polydisco.js" >
+	</script>
+</head>
+<body>
+
+	<div class="main">
+		<div id="header">
+			<nav>
+				<a href=""></a>
+			</nav>
+
+
+		</div>
+		<div id="body">
+			<!--Task 1  -->
+			<form name = "registrationForm" id="nameForm">
+				<label name = "usrFName">First Name </label><br>
+				<input id="fName" type="text" minlength="3" required><br>
+				<label name = "usrLName">Last Name </label><br>
+				<input id="lName" type="text" minlength="3" required><br>
+
+				<label name ="usrdob">Date of Birth</label><br>
+				<input id="dob" type="date" min="2009-00-00" max="2013-12-31" ><br>
+
+				<label name="gender" >Gender</label><br>
+                    <select id="gender">
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                </select><br>
+				
+				<label name="usrEmail">Email</label><br>
+				<input type="email" id="email"  >
+				<!-- pattern="@[gmail.com]" -->
+				<br><br>
+				<!-- Task 3 -->
+				<button type="button" id="registerButton"onclick="return Register()">Register</button>&nbsp;
+				<button type="button" id="startButton" onclick="PlayGame()" disabled>Start</button>&nbsp;
+				<button type="button" id="endButton" onclick="PlayGame()"disabled>End</button> 
+			</form>
+
+		</div>
+		<div id="footer">
+
+		</div>
+	</div>
+	
+
+
+
+</body>
+</html>
