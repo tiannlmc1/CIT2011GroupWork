@@ -60,7 +60,7 @@ form{
     justify-content: center;
     align-items: center;
     visibility: hidden;
-    transition: visibility 0s, .5s;
+    transition: visibility 0s, .9s;
 }
 
 .activateModal{

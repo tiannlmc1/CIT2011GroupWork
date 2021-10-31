@@ -2,11 +2,6 @@ var PlayersData;
 var is_generateWebsite = false;
 var correctAns;
 
-// var acceptBtn = document.querySelector('#accept');
-// var nextBtn = document.querySelector('#next');
-// var modalBg = document.querySelector('#modalBg');
-// var endButton = document.querySelector('#endButton');
-
 
 // Task 2
 function Register(){
@@ -60,11 +55,11 @@ function PlayGame() {
     var seed1 = Math.floor(Math.random()*9)+1;
     var seed2 = Math.floor(Math.random()*5)+1;
     var answer = seed1 * seed2;
+
     document.getElementById("numvalue1").value = seed1;
     document.getElementById("numvalue2").value = seed2;
 
     var is_correct = checkAnswer(answer); 
-
 
 }
 
