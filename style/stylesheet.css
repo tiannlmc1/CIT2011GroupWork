@@ -1,7 +1,3 @@
-label,legend{
-    font-family: 'Mukta', sans-serif;
-}
-
 .main{
     display: flex;  
     justify-content: center;
@@ -36,18 +32,16 @@ form{
     padding: 30px;
 }
 
-.button{
+button{
     display: inline-block;
     border-radius: 15px;
     margin: 4px 2px;
     text-align: center;
 }
-.button:hover{
+button:hover{
     box-shadow: 1px 1px 1px 1px;
     opacity: .6;
 }
-
-
 
 .modalBg{
     position: fixed;
@@ -69,8 +63,8 @@ form{
 }
 .modal{
     position: relative;
-    height: 740px;
-    width: 400px;
+    height: 250%;
+    width: 125%x;
     display: flex;  
     justify-content: center;
     align-items: center;

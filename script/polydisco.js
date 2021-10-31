@@ -35,7 +35,7 @@ function calculateAge(){
 
 // Apart Task 3
 function disableInput(){
-    var input =document.getElementsByName('fform');
+    var input =document.getElementsByClassName('ffrom');
     var startButton = document.getElementById("startBtn");
     var usrAns = document.getElementById('usrAns');
 
@@ -62,9 +62,6 @@ function PlayGame() {
     var is_correct = checkAnswer(answer); 
 
 }
-
-
-
 function checkAnswer(answer){
     usrAns = document.getElementById('usrAns').value;
     if(usrAns = answer){

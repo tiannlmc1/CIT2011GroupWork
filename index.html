@@ -1,67 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<title>Poly Disco</title>
-	<link rel="stylesheet" href="style/stylesheet.css">
-	<!-- <link rel="icon" href="⨴"> -->
-	<script type="text/javascript" src="script/polydisco.js" >
+	<link rel='stylesheet' href='style/stylesheet.css'>
+	<!-- <link rel='icon' href='⨴'> -->
+	<script type='text/javascript' src='script/polydisco.js' >
 	</script>
 </head>
 <body>
 
-	<div class="main">
-		<div id="header">
+	<div class='main'>
+		<div id='header'>
 			<nav>
-				<a href=""></a>
+				<a href=''></a>
 			</nav>
 
 
 		</div>
-		<div id="body">
+		<div id='body'>
 			<!--Task 1  -->
-			<form name = "registrationForm" id="nameForm">
-				<label name = "usrFName">First Name </label><br>
-				<input name='fform'id="fName" type="text" minlength="3" required><br>
-				<label name = "usrLName">Last Name </label><br>
-				<input name='fform'id="lName" type="text" minlength="3" required><br>
+			<form name = 'registrationForm' id='nameForm'>
+				<label>First Name </label><br>
+				<input class='ffrom' id='fName' type='text' minlength='3' required><br>
+				<label>Last Name </label><br>
+				<input class='ffrom' id='lName' type='text' minlength='3' required><br>
 
-				<label name ="usrdob">Date of Birth</label><br>
-				<input name='fform'id="dob" type="date" min="2009-00-00" max="2013-12-31" ><br>
+				<label >Date of Birth</label><br>
+				<input class='ffrom' id='dob' type='date' min='2009-01-01' max='2013-12-31' ><br>
 
-				<label name='fform'name="gender" >Gender</label><br>
-            <select id="gender">
-					  <option value=''disabled selected>Select your option</option>
-					  <option name='fform'value="female">Female</option>
-					  <option name='fform'value="male">Male</option>
+				<label >Gender</label><br>
+            <select id='gender'>
+					  <option value='' disabled selected>Select your option</option>
+					  <option class='ffrom' value='female'>Female</option>
+					  <option class='ffrom' value='male'>Male</option>
             </select><br>
 				
-				<label name="usrEmail">Email</label><br>
-				<input title="Must be a gmail.com domain" name='fform'type="email" id="email"  >
-				<!-- pattern="@[gmail.com]" -->
+				<label>Email</label><br>
+				<input title='Must be a gmail.com domain' class='ffrom' type='email' id='email'  >
+				<!-- pattern='@[gmail.com]' -->
 				<br><br>
 				<!-- Task 3 -->
-				<button name='fform'type='button' id='registerButton'onclick='Register()'>Register</button>&nbsp;
-				<button type='button' id='startBtn' onclick='PlayGame()'disabled >Start</button>&nbsp;
+				<button class='ffrom' type='button' id='registerButton' onclick='Register()' >Register</button>&nbsp;
+				<button type='button' id='startBtn' onclick='PlayGame()' disabled >Start</button>&nbsp;
+				<button type='button' id='seePercentage' onclick='' disabled >See Percentage</button>&nbsp;
 				
 			</form>
 		</div>
 
-		<div id="footer">
+		<div id='footer'>
 
 		</div>
 	</div>
 	
-	<div id="modalBg" class="modalBg"> 
-		<div class="modal">
-			<form name="modalForm">
-				<input class="question" id="numvalue1" type='number' disabled readonly> X
-				<input class="question" type='number' id='numvalue2' disabled readonly><br><br>
+	<div id='modalBg' class='modalBg'> 
+		<div class='modal'>
+			<form name='modalForm'>
+				<input class='question' id='numvalue1' type='text' disabled readonly> X
+				<input class='question' type='text' id='numvalue2' disabled readonly><br><br>
 				<input type='number' id='usrAns'><br>
-				<button type="button" class="button"id="acceptBtn">Accept</button>
-				<button type="button"onclick='PlayGame()'class ="button"id="nextBtn">Next</button>
-				<button type="button" onclick="disableModal()" id="endBtn" >End</button> 
+				<button type='button' id='acceptBtn' >Accept</button>
+				<button type='button' onclick='PlayGame()' class ='button' id='nextBtn'>Next</button>
+				<button type='button' onclick='disableModal()' id='endBtn' >End</button> 
 			</form>
 		</div>
 	</div>
