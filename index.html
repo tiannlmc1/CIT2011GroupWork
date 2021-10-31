@@ -23,14 +23,14 @@
 			<!--Task 1  -->
 			<form name = "registrationForm" id="nameForm">
 				<label name = "usrFName">First Name </label><br>
-				<input id="fName" type="text" minlength="3" required><br>
+				<input name='fform'id="fName" type="text" minlength="3" required><br>
 				<label name = "usrLName">Last Name </label><br>
-				<input id="lName" type="text" minlength="3" required><br>
+				<input name='fform'id="lName" type="text" minlength="3" required><br>
 
 				<label name ="usrdob">Date of Birth</label><br>
-				<input id="dob" type="date" min="2009-00-00" max="2013-12-31" ><br>
+				<input name='fform'id="dob" type="date" min="2009-00-00" max="2013-12-31" ><br>
 
-				<label name="gender" >Gender</label><br>
+				<label name='fform'name="gender" >Gender</label><br>
                     <select id="gender">
                     <option value="" disabled selected>Select your option</option>
                     <option value="female">Female</option>
@@ -38,11 +38,11 @@
                 </select><br>
 				
 				<label name="usrEmail">Email</label><br>
-				<input type="email" id="email"  >
+				<input name='fform'type="email" id="email"  >
 				<!-- pattern="@[gmail.com]" -->
 				<br><br>
 				<!-- Task 3 -->
-				<button type='button' id='registerButton'onclick='Register()'>Register</button>&nbsp;
+				<button name='fform'type='button' id='registerButton'onclick='Register()'>Register</button>&nbsp;
 				<button type='button' id='startBtn' onclick='PlayGame()'disabled >Start</button>&nbsp;
 				
 			</form>
@@ -60,7 +60,7 @@
 				<input type='number' id='usrAns'><br>
 				<button type="button" class="button"id="acceptBtn">Accept</button>
 				<button type="button" class ="button"id="nextBtn">Next</button>
-				<button type="button" id="endBtn" >End</button> 
+				<button type="button" onclick="disableModal()" id="endBtn" >End</button> 
 				
 			</form>
 		</div>

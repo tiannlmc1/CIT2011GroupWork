@@ -59,7 +59,7 @@ form{
     display: flex;  
     justify-content: center;
     align-items: center;
-    /*visibility: hidden;*/
+    visibility: hidden;
     transition: visibility 0s, .5s;
 }
 
