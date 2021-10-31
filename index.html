@@ -42,14 +42,27 @@
 				<!-- pattern="@[gmail.com]" -->
 				<br><br>
 				<!-- Task 3 -->
-				<button type="button" id="registerButton"onclick="return Register()">Register</button>&nbsp;
+				<button type="button" id="registerButton"onclick="Register()">Register</button>&nbsp;
 				<button type="button" id="startButton" onclick="PlayGame()" disabled>Start</button>&nbsp;
-				<button type="button" id="endButton" onclick="PlayGame()"disabled>End</button> 
+				
 			</form>
-
 		</div>
+
 		<div id="footer">
 
+		</div>
+	</div>
+	
+	<div id="modalBg" class="modalBg"> 
+		<div class="modal">
+			<form>
+				<input id="numvalue1" type='number' disabled> X  <input type='number' id='numvalue2' disabled><br><br>
+				<input type='number' id='usrAns'><br>
+				<button class="button"id="acceptBtn">Accept</button>
+				<button class ="button"id="nextBtn">Next</button>
+				<button type="button" id="endBtn" disabled>End</button> 
+				
+			</form>
 		</div>
 	</div>
 	
