@@ -37,15 +37,15 @@ function calculateAge(){
 function disableInput(){
     var input =document.getElementsByTagName('input');
     var registerButton = document.getElementById("registerButton");
-    var startButton = document.getElementById("startButton");
-    var endButton = document.getElementById("endButton");
+    var startButton = document.getElementById("startBtn");
+    var usrAns = document.getElementById('usrAns');
+
     registerButton.disabled = true;
 
     for(i=0;i<input.length;i++){
         input[i].disabled=true;
     }   
     startButton.disabled = false;
-    endButton.disabled = false;
 }
 
 //Task 4
@@ -53,21 +53,17 @@ function PlayGame() {
 
     document.getElementById('modalBg').className += ' activateModal';
 
-    for(i=0;true;i++){
-        var seed1 = Math.floor(Math.random()*9)+1;
-        var seed2 = Math.floor(Math.random()*5)+1;
-        var answer = seed1 * seed2;
-        document.getElementById("numvalue1").value = seed1;
-        document.getElementById("numvalue2").value = seed1;
+    var seed1 = Math.floor(Math.random()*9)+1;
+    var seed2 = Math.floor(Math.random()*5)+1;
+    var answer = seed1 * seed2;
+    document.getElementById("numvalue1").value = seed1;
+    document.getElementById("numvalue2").value = seed1;
 
-        var is_correct = checkAnswer(answer); 
-        if(is_correct){
-            
-        }else{
-            
-        }
-    }
+    var is_correct = checkAnswer(answer); 
+
+
 }
+
 
 
 function checkAnswer(answer){

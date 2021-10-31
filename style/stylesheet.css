@@ -59,7 +59,7 @@ form{
     display: flex;  
     justify-content: center;
     align-items: center;
-    visibility: hidden;
+    /*visibility: hidden;*/
     transition: visibility 0s, .5s;
 }
 
@@ -69,8 +69,8 @@ form{
 }
 .modal{
     position: relative;
-    height: 30%;
-    width:25%;
+    height: 740px;
+    width: 400px;
     display: flex;  
     justify-content: center;
     align-items: center;
@@ -86,3 +86,15 @@ form{
     cursor: pointer;
 }
 
+.question{
+    height: 120px;
+    width: 118px;
+    background-color: grey;
+    color:white ;
+    font-size: 50px;
+
+}
+
+#usrAns{
+    width: 274px;
+}
