@@ -5,6 +5,10 @@
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<title>Poly Disco</title>
 	<link rel='stylesheet' href='style/stylesheet.css'>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto+Mono&family=Zen+Kurenaido&display=swap" rel="stylesheet"> 
 	<!-- <link rel='icon' href='⨴'> -->
 	<script type='text/javascript' src='script/polydisco.js' >
 	</script>
@@ -23,19 +27,19 @@
 			<!--Task 1  -->
 			<form name = 'registrationForm' id='nameForm'>
 				<label>First Name </label><br>
-				<input class='ffrom' id='fName' type='text' minlength='3' required><br>
+				<input class='ffrom' id='fName' type='text' minlength='3' required><br><br>
 				<label>Last Name </label><br>
-				<input class='ffrom' id='lName' type='text' minlength='3' required><br>
+				<input class='ffrom' id='lName' type='text' minlength='3' required><br><br>
 
 				<label >Date of Birth</label><br>
-				<input class='ffrom' id='dob' type='date' min='2009-01-01' max='2013-12-31' ><br>
+				<input class='ffrom' id='dob' type='date' min='2009-01-01' max='2013-12-31' ><br><br>
 
 				<label >Gender</label><br>
             <select id='gender'>
 					  <option value='' disabled selected>Select your option</option>
 					  <option class='ffrom' value='female'>Female</option>
 					  <option class='ffrom' value='male'>Male</option>
-            </select><br>
+            </select><br><br>
 				
 				<label>Email</label><br>
 				<input title='Must be a gmail.com domain' class='ffrom' type='email' id='email'  >
@@ -57,9 +61,10 @@
 	<div id='modalBg' class='modalBg'> 
 		<div class='modal'>
 			<form name='modalForm'>
-				<input class='question' id='numvalue1' type='text' disabled readonly> X
+				<input class='question' id='numvalue1' type='text' disabled readonly>
+				<span class="multiplySign">×</span>
 				<input class='question' type='text' id='numvalue2' disabled readonly><br><br>
-				<input type='number' id='usrAns'><br>
+				<input type='number' id='usrAns'><br><br><br>
 				<button type='button' id='acceptBtn' >Accept</button>
 				<button type='button' onclick='PlayGame()' class ='button' id='nextBtn'>Next</button>
 				<button type='button' onclick='disableModal()' id='endBtn' >End</button> 
