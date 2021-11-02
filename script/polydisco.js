@@ -1,12 +1,10 @@
 var PlayersData;
-var is_generateWebsite = false;
 var correctAns;
 
 
 // Task 2
 function Register(){
-
-        //Validate Inputs ar
+    //Validate Inputs ar
     fName = document.getElementById("fName").value;
     lName = document.getElementById("lName").value;
     age = calculateAge();
@@ -19,17 +17,29 @@ function Register(){
 
 }
 
-function disableModal(){
+function disableModal(){ //Disabling modal and activating form and percentage button
     var endBtn = document.getElementById('modalBg');
     endBtn.classList.remove('activateModal');
+
+    var input =document.getElementsByClassName('ffrom');
+    var startButton = document.getElementById("startBtn");
+    var registrationForm = document.forms["registrationForm"];
+    registrationForm.reset();
+
+    input.disabled = false;
+
+    for(i=0;i<input.length;i++){
+        input[i].disabled=false;
+    }   
+    startButton.disabled = true;
 }
 
 // Apart of Task 2
 function calculateAge(){
-    dob = document.getElementById('dob').value;
+    var dob = document.getElementById('dob').value;
     var birthDate = new Date(dob);
     var currentDate = new Date();
-    age = (currentDate.getFullYear() - birthDate.getFullYear());
+    var age = (currentDate.getFullYear() - birthDate.getFullYear());
     return age;
 }
 
@@ -37,7 +47,6 @@ function calculateAge(){
 function disableInput(){
     var input =document.getElementsByClassName('ffrom');
     var startButton = document.getElementById("startBtn");
-    var usrAns = document.getElementById('usrAns');
 
     input.disabled = true;
 
@@ -49,24 +58,27 @@ function disableInput(){
 
 //Task 4
 function PlayGame() {
-
+    
+    document.getElementById("answerResponse").innerHtml = "";
     document.getElementById('modalBg').className += ' activateModal';
 
     var seed1 = Math.floor(Math.random()*9)+1;
     var seed2 = Math.floor(Math.random()*5)+1;
-    var answer = seed1 * seed2;
-
+    correctAns = seed1 * seed2;
+        
     document.getElementById("numvalue1").value = seed1;
     document.getElementById("numvalue2").value = seed2;
-
-    var is_correct = checkAnswer(answer); 
-
+    document.getElementById("usrAns").value  = "";
 }
-function checkAnswer(answer){
-    usrAns = document.getElementById('usrAns').value;
-    if(usrAns = answer){
-        return true;
+
+function checkAnswer(){
+    var usrAns = document.getElementById('usrAns').value;
+    console.log(usrAns);
+    console.log(correctAns);
+
+    if(usrAns == correctAns){
+       document.getElementById("answerResponse").innerHtml = "Correct!";
     }else{
-        return false;
+        document.getElementById("answerResponse").innerHtml = "Incorrect";    
     }
 }
