@@ -30,17 +30,14 @@
 				<input class='ffrom' id='fName' type='text' minlength='3' required><br><br>
 				<label>Last Name </label><br>
 				<input class='ffrom' id='lName' type='text' minlength='3' required><br><br>
-
 				<label >Date of Birth</label><br>
 				<input class='ffrom' id='dob' type='date' min='2009-01-01' max='2013-12-31' ><br><br>
-
 				<label >Gender</label><br>
             <select id='gender'>
 					  <option value='' disabled selected>Select your option</option>
 					  <option class='ffrom' value='female'>Female</option>
 					  <option class='ffrom' value='male'>Male</option>
             </select><br><br>
-				
 				<label>Email</label><br>
 				<input title='Must be a gmail.com domain' class='ffrom' type='email' id='email'  >
 				<!-- pattern='@[gmail.com]' -->
@@ -49,7 +46,6 @@
 				<button class='ffrom' type='button' id='registerButton' onclick='Register()' >Register</button>&nbsp;
 				<button type='button' id='startBtn' onclick='PlayGame()' disabled >Start</button>&nbsp;
 				<button type='button' id='seePercentage' onclick='' disabled >See Percentage</button>&nbsp;
-				
 			</form>
 		</div>
 
@@ -61,19 +57,18 @@
 	<div id='modalBg' class='modalBg'> 
 		<div class='modal'>
 			<form name='modalForm'>
+				<section id="answerResponse"> </section>
 				<input class='question' id='numvalue1' type='text' disabled readonly>
 				<span class="multiplySign">×</span>
 				<input class='question' type='text' id='numvalue2' disabled readonly><br><br>
+
 				<input type='number' id='usrAns'><br><br><br>
-				<button type='button' id='acceptBtn' >Accept</button>
+				<button type='button' onclick='checkAnswer()' id='acceptBtn' >Accept</button>
 				<button type='button' onclick='PlayGame()' class ='button' id='nextBtn'>Next</button>
 				<button type='button' onclick='disableModal()' id='endBtn' >End</button> 
 			</form>
 		</div>
 	</div>
-	
-
-
 
 </body>
 </html>

@@ -9,6 +9,7 @@ body{
     background-color: #26c4e4;
     background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
     background-repeat: repeat;
+    /*Inspiration from https://codepen.io/juanbrujo*/
   }
 
 .main{
@@ -18,9 +19,7 @@ body{
 }
 
 .main > div{
-    background-color: black;
     margin: 20px;
-    background-color:rgba(0, 0, 0, 0);
 }
 
 input[type=text],input[type=email],input[type=date],select{
@@ -41,7 +40,7 @@ input:hover,select{
 form{
     background-color: white;
     margin: 2px;
-    padding: 40px;
+    padding: 20px;
     border-radius: 10px;
     padding: 50px;
     border: 4px;
@@ -55,12 +54,14 @@ button{
     background-color: #23BAD8;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 29px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     border-radius: 5px;
     font-size: 100%;
+    transition: all .2s ease-in-out;
+
 }
 
 button:disabled{
@@ -82,7 +83,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     visibility: hidden;
-    transition: all .2s ease-in-out;
+    transition:  .2s ease-in-out;
 }
 
 .activateModal{
