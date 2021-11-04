@@ -1,6 +1,7 @@
 var PlayersData;
 var correctAns;
-var playerInfo;
+var seed1;
+var seed2;
 
 // Task 2
 function Register(){
@@ -11,7 +12,7 @@ function Register(){
     email = document.getElementById("email").value;
     gender =  document.getElementById('gender').value;
 
-    PlayersData = [fName,lName,age,gender,email];
+    PlayersData = [fName,lName,age,gender,email,];
     // Apart Task 3
     disableInput();
 
@@ -70,29 +71,25 @@ function PlayGame() {
     document.getElementById("numvalue2").value = seed2;
     document.getElementById("usrAns").value  = "";
 }
-//Task 6
+//TASK 6	
 function checkAnswer(){
     var usrAns = document.getElementById('usrAns').value;
+    var check=true;
     console.log(usrAns);
     console.log(correctAns);
-
-    if(usrAns == correctAns){
-       document.getElementById("answerResponse").innerHtml = "Correct!";
-       alert("Your answer is " +document.getElementById("answerResponse").innerHtml); 
-	   return true;
-    }else{
-        document.getElementById("answerResponse").innerHtml = "Incorrect"; 
-        alert("Your answer is "+ document.getElementById("answerResponse").innerHtml); 
-		return false;
-    }
-    document.getElementById("numvalue1").value = seed1;
-    document.getElementById("numvalue2").value = seed2;
-    document.getElementById("usrAns").value  = "";
 	
-	PlayersData= [seed1,seed2,usrAns, document.getElementById("answerResponse").innerHtml];
+    PlayersData.push(seed1 * seed2, "User's answer: "+usrAns,);	
+    if(usrAns == correctAns){
+       document.getElementById("answerResponse").innerHTML = "Your answer is CORRECT!";
+	return true; 
+	if(check){
+		PlayersData.push("Answer is correct,");
+	}
+    }else{
+        document.getElementById("answerResponse").innerHTML = "Your answer is incorrect. Try again.";
+		return false;  
+		if(check){ 
+			PlayersData.push("Answer is incorrect,");
+		}
+    }	
 }
-//Task 9
-function playerInfo(){
-   document.getElementById("showpercentage").value= fName + " "+ lName + " ";    
-}
-
