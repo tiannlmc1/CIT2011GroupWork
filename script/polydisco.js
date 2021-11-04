@@ -74,7 +74,6 @@ function PlayGame() {
 //TASK 6	
 function checkAnswer(){
     var usrAns = document.getElementById('usrAns').value;
-    var check=true;
     console.log(usrAns);
     console.log(correctAns);
 	
@@ -82,14 +81,11 @@ function checkAnswer(){
     if(usrAns == correctAns){
        document.getElementById("answerResponse").innerHTML = "Your answer is CORRECT!";
 	return true; 
-	if(check){
-		PlayersData.push("Answer is correct,");
-	}
+	PlayersData.push("Answer is correct,");
     }else{
         document.getElementById("answerResponse").innerHTML = "Your answer is incorrect. Try again.";
 		return false;  
-		if(check){ 
-			PlayersData.push("Answer is incorrect,");
-		}
-    }	
+		PlayersData.push("Answer is incorrect,");
+	 
+    	}	
 }
